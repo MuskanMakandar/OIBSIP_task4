@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary_variant"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Total Questions"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="37dp"
+        android:text="This will be the Question"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ans_A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ans_A"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="314dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans A"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ans_B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ans_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans B"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ans_C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans_A"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ans_C"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans C"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ans_D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans_B"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/ans_D"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Ans D"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans_C"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="403dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="130dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans_D"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
